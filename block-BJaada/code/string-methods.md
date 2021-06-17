@@ -22,21 +22,83 @@ Example:
    - Return: character at specific index in the string (string data type)
    - Example:
      ```js
-     let name = 'Arya Stark';
+     let name = "Arya Stark";
      name.charAt(2); //"y"
-     let sentance = 'A quick brown fox jumped over a lazy dog';
+     let sentance = "A quick brown fox jumped over a lazy dog";
      sentance(4); // "i"
-     let houseName = 'Starks';
+     let houseName = "Starks";
      houseName.charAt(0); // "S"
      ```
    - `charAt` accepts a index (number data type) and return the character on that index in the string.
 
 2. `toUpperCase`
+   -Parameter:It's do not accept any parameter.
+   -Return:It's return same string in uppercase.
+   -Example:
+   ```js
+   let name = "vivek";
+   name.toUpperCase(); // "VIVEK"
+   let hello = "Hello World";
+   hello.toUpperCase(); //"HELLO WORLD";
+   let houseName = "stark";
+   houseNames.toUpperCase(); //"STARK"
+   ```
+   - `toUpperCase` do not accept any parameter and return uppercase string.
 3. `toLowerCase`
+   -Parameter:It's do not accept any parameter.
+   -Return:It's return same string in lowercase.
+   -Example:
+   ```js
+   let name = "VIVEK";
+   name.toLowerCase(); // "vivek"
+   let hello = "Hello World";
+   hello.toLowerCase(); //"hello world";
+   let houseName = "Stark";
+   houseNames.toLowerCase(); //"stark"
+   ```
+   - `toLowerCase` do not accept any parameter and return lowercase string.
 4. `trim`
+   -Parameter:It's do not accept any parameter.
+   -Return:It's return same string by removing whitespace in both end.
+   -Example:
+   ```js
+   let name = "  Vivek  ";
+   name.trim(); // "Vivek"
+   let hello = "Hello World   ";
+   hello.trim(); //"Hello world";
+   let houseName = "  Stark  ";
+   houseNames.trim(); //"Stark"
+   ```
+   - `trim` do not accept any parameter and return string by removing whitespace from both side.
 5. `trimEnd`
+   -Parameter:It's do not accept any parameter.
+   -Return:It's return same string by removing whitespace from end of string.
+   -Example:
+   ```js
+   let name = "  Vivek  ";
+   name.trimEnd(); // "   Vivek"
+   let hello = "Hello World   ";
+   hello.trimEnd(); //"Hello world";
+   let houseName = "  Stark  ";
+   houseNames.trimEnd(); //"   Stark"
+   ```
+   - `trimEnd` do not accept any parameter and return string by removing whitespace from end of string.
 6. `trimStart`
+   -Parameter:It's do not accept any parameter.
+   -Return:It's return same string by removing whitespace from start of string.
+   -Example:
+   ```js
+   let name = "  Vivek  ";
+   name.trimStart(); // "Vivek  "
+   let hello = "  Hello World";
+   hello.trimStart(); //"Hello world";
+   let houseName = "  Stark  ";
+   houseNames.trimStart(); //"Stark  "
+   ```
+   - `trimStart` do not accept any parameter and return string by removing whitespace from start of string.
 7. `concat`
+   -Parameter:It's do not accept any parameter.
+    
 8. `endsWith`
 9. `includes`
 10. `indexOf`
