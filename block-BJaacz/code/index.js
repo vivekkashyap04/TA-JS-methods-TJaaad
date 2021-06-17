@@ -25,9 +25,9 @@ function addFive(number){
     - While doing so use the funciton addTwo
 */
 function addTwoToArray(arr){
-  let sum = 0;
+  let sum = [];
  for(let ar of arr){
-   sum += addTwo(ar);
+   sum.push(addTwo(ar))
 }
    return sum;
 }
@@ -38,11 +38,11 @@ function addTwoToArray(arr){
     - while doing so use the funciton addThree
 */
 function addThreeToArray(arr){
-  let sum = 0;
+  let final = [];
   for(let ar of arr){
-     sum += addThree(ar);
+    final.push(addThree(ar))
   }
-  return sum;
+  return final;
 }
 /*
   Create a function named addFiveToArray which accepts:
@@ -51,11 +51,11 @@ function addThreeToArray(arr){
     - while doing so use the funciton addThree
 */
 function addFiveToArray(arr){
-  let sum = 0;
+  let final = [];
   for(let ar of arr){
-     sum += addThree(ar);
+     final.push(addThree(ar));
   }
-  return sum;
+  return final;
 }
 /*
 In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeating the code, let's fix this.
@@ -73,11 +73,11 @@ In above function addTwoToArray, addThreeToArray, addFiveToArray we are repeatin
     console.log(changeArray([1, 2, 3, 4, 5, 6], addFive)); // [6, 7, 8, 9, 10, 11]
 */
 function changeArray(arr,fn){
-  let sum = 0;
+  let final = [];
   for(let ar of arr){
-     sum += fn(ar);
+     final.push(fn(ar))
   }
-  return sum;
+  return final;
 }
 /*
   Create a function called sendMessage that accepts two arguments:
@@ -98,7 +98,7 @@ function sendMessage(message,fn){
 
 */
 function first(fn){
-  return fn();
+  return fn;
 }
 /*
  Create a function named `second`
