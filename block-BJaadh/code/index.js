@@ -30,7 +30,7 @@ strings.indexOf('is');
 // - Check if all the numbers in numbers array are divisible by three use array method (every)
 numbers.every(elem => elem % 3 === 0);
 // -  Sort Array from smallest to largest
-
+numbers.sort(a,b => a-b);
 // - Remove the last word in strings
 strings.pop();
 // - Find largest number in numbers
