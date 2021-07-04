@@ -10,8 +10,9 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
-![](./img/main.png)
 
+![](./img/main.png)
+`![](./img/IMG_20210704_122349.jpg)`
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -21,6 +22,8 @@ function double(num) {
 let doubleNum = numbers.forEach(double);
 ```
 
+`![](./img/IMG_20210704_122411.jpg)`
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function double(num) {
@@ -28,6 +31,8 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
+
+`![](./img/IMG_20210704_122432.jpg)`
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -37,6 +42,8 @@ function double(num) {
 let doubleNumbers = numbers.map(double);
 ```
 
+`![](./img/IMG_20210704_205419.jpg)`
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function addTwo(num) {
@@ -45,6 +52,8 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+`![](./img/IMG_20210704_205433.jpg)`
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function addTwo(num) {
@@ -52,6 +61,8 @@ function addTwo(num) {
 }
 let doubleNumbers = numbers.map(addTwo);
 ```
+
+`![](./img/IMG_20210704_205507.jpg)`
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -61,6 +72,8 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+`![](./img/IMG_20210704_205701.jpg)`
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function isOdd(num) {
@@ -68,6 +81,8 @@ function isOdd(num) {
 }
 let oddNumbers = numbers.filter(isOdd);
 ```
+
+`![](./img/IMG_20210704_205804.jpg)`
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -77,6 +92,8 @@ function test(num) {
 let filteredNumbers = numbers.filter(test);
 ```
 
+`![](./img/IMG_20210704_205848.jpg)`
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function test(num) {
@@ -84,6 +101,8 @@ function test(num) {
 }
 let filteredNumbers = numbers.filter(test);
 ```
+
+`![](./img/IMG_20210704_205817.jpg)`
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -93,6 +112,8 @@ function add(accumulator, currentValue) {
 let sum = numbers.reduce(add);
 ```
 
+`![](./img/IMG_20210704_205716.jpg)`
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function add(accumulator, currentValue) {
@@ -100,3 +121,5 @@ function add(accumulator, currentValue) {
 }
 let sum = numbers.reduce(add);
 ```
+
+`![](./img/IMG_20210704_205903.jpg)`
