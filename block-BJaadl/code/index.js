@@ -11,14 +11,10 @@ let words = [
 
 // - Write a function findLongestWord that takes an array of words and returns the longest word from the array. (Use above array "words" to test it). If there are 2 with the same length, it should return the first occurrence.
 function findLongestWord(word){
-  let a = word[0].length;
-      word.filter(para => {
-        a <= para.length ? a = para.length : para.length = para.length;
-      })
-      return a;
+  return [...word].sort((a,b) => a.length - b.length).pop();
 }
 // - Convert the above array "words" into an array of length of word instead of word.
-words.map(elem => elem.length);
+let wordsLength = words.map(elem => elem.length);
 // - Create a new array that only contains word with atleast one vowel.
 words.filter(elem => {
   if(elem.toLowerCase().includes('a') || elem.toLowerCase().includes('e') || elem.toLowerCase().includes('i') || elem.toLowerCase().includes('o') || elem.toLowerCase().includes('u')){
@@ -43,12 +39,10 @@ let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 // - Create a sumArray function that takes an array of number as a parameter, and calculate the sum of all its numbers
 function sumArray(arr){
-  let a =0;
-  arr.reduce((elem,currentValue) => {
-    a = elem + currentValue;
-    return a;
+  return  arr.reduce((elem,currentValue) => {
+    elem = elem + currentValue;
+    return elem;
   })
-  return a;
 }
 // - Make a new array that contains number multiplied by 3 like [6, 18, 27 ...]
 numbers.filter(elem => elem % 3 === 0);
