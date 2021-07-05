@@ -36,7 +36,7 @@ persons.filter(elem => elem.name.startsWith('J'));
 // Find the first name that starts with 'P' in persons array and log the object
 persons.filter(elem => elem.name.startsWith('P'));
 // Find the first name that starts with 'J', grade is greater than 10 and is a female
-persons.filter(elem => elem.name.startsWith('J') & elem.grade > 10 & elem.sex === "F");
+persons.filter(elem => elem.name.startsWith('J') && elem.grade > 10 && elem.sex === "F");
 // Filter all the female from persons array and store in femalePersons array
 let femalePersons =  persons.filter(elem => elem.sex === "F");
 // Filter all the male from persons array and store in malePersons array
