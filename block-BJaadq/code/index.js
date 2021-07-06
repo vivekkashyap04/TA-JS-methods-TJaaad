@@ -1,35 +1,91 @@
 // NOTE: You can not use reduce methods to solve this exercise
 
 function countAllPeople() {
-  // your code goes here
+  let total = 0;
+  for(var i= 0; i< got.houses.length;i++){
+      total += got.houses[i].people.length;
+  }
+  return total;
 }
 
 function peopleByHouses() {
-  // your code goes here
+  let obj = {};
+  for(var i= 0; i< got.houses.length;i++){
+    obj[got.houses[i].name] = got.houses[i].people.length;
+}
+return obj;
 }
 
 function everyone() {
-  // your code goes here
+  let arr = [] ;
+  for(var i= 0; i< got.houses.length;i++){
+    for(var j=0; j < got.houses[i].people.length; j++){
+      arr.push(got.houses[i].people[j].name);
+    }
+  }
+  return arr;
 }
 
 function nameWithS() {
-  // your code goes here
+  let arr = [] ;
+  for(var i= 0; i< got.houses.length;i++){
+    for(var j=0; j < got.houses[i].people.length; j++){
+      if(got.houses[i].people[j].name.includes('s')){
+        arr.push(got.houses[i].people[j].name);
+      }
+    }
+  }
+  return arr;
 }
 
 function nameWithA() {
-  // your code goes here
+  let arr = [] ;
+  for(var i= 0; i< got.houses.length;i++){
+    for(var j=0; j < got.houses[i].people.length; j++){
+      if(got.houses[i].people[j].name.includes('a')){
+        arr.push(got.houses[i].people[j].name);
+      }
+    }
+  }
+  return arr;
 }
 
 function surnameWithS() {
-  // your code goes here
+  let arr = [] ;
+  for(var i= 0; i< got.houses.length;i++){
+    for(var j=0; j < got.houses[i].people.length; j++){
+      let subString = got.houses[i].people[j].name.split(" ");
+      if(subString[1].charAt('S') === 'S'){
+        arr.push(got.houses[i].people[j].name);
+      }
+    }
+  }
+  return arr;
 }
 
 function surnameWithA() {
-  // your code goes here
+  let arr = [] ;
+  for(var i= 0; i< got.houses.length;i++){
+    for(var j=0; j < got.houses[i].people.length; j++){
+      let subString = got.houses[i].people[j].name.split(" ");
+      if(subString[1].charAt('A') === 'A'){
+        arr.push(got.houses[i].people[j].name);
+      }
+    }
+  }
+  return arr;
 }
 
 function peopleNameOfAllHouses() {
-  // your code goes here
+  let obj = {};
+  for(var i= 0; i< got.houses.length;i++){
+    let arr = [] ;
+    for(var j=0; j < got.houses[i].people.length; j++){
+      obj[got.houses[i].name] = arr;
+      arr.push(got.houses[i].people[j].name);
+    }
+  }
+  return obj;
 }
 
 // Testing your result after writing your function
