@@ -1,35 +1,91 @@
 // NOTE: You can only use the (reduce) array method to solve this exercise:
+const got = require("./data")
 
 function countAllPeople() {
-  // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    acc += cv.people.length;
+    return acc;
+},0);
 }
 
 function peopleByHouses() {
-  // your code goes here
+   return got.houses.reduce((acc,cv) => {
+       acc[cv.name] = cv.people.length;
+       return acc;
+   },{})
 }
 
 function everyone() {
-  // your code goes here
+  let result = got.houses.reduce((acc,cv) => {
+    let nameArr = cv.people.reduce((arr,elem ) => {
+      arr.push(elem.name);
+      return arr;
+    }, [])
+  return acc.concat(nameArr)
+  },[])
+  return result;
 }
 
 function nameWithS() {
-  // your code goes here
+  let result = got.houses.reduce((acc,cv) => {
+    let nameArr = cv.people.reduce((arr,elem ) => {
+      if(elem.name.includes('s')){
+        arr.push(elem.name);
+      }
+      return arr;
+    }, [])
+  return acc.concat(nameArr)
+  },[])
+  return result;
 }
 
 function nameWithA() {
-  // your code goes here
+   return got.houses.reduce((acc,cv) => {
+     let nameArr = cv.people.reduce((arr,val) => {
+        if(val.name.includes('a')){
+          arr.push(val.name);
+        }
+        return arr;
+     },[]);
+     return acc.concat(nameArr);
+   },[])
 }
 
 function surnameWithS() {
-  // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    let nameArr = cv.people.reduce((arr,val) => {
+       let subString = val.name.split(" ");
+       if(subString[1].charAt('S') === "S"){
+         arr.push(val.name);
+       }
+       return arr;
+    },[]);
+    return acc.concat(nameArr);
+  },[])
 }
 
 function surnameWithA() {
-  // your code goes here
+  return got.houses.reduce((acc,cv) => {
+    let nameArr = cv.people.reduce((arr,val) => {
+       let subString = val.name.split(" ");
+       if(subString[1].charAt('A') === "A"){
+         arr.push(val.name);
+       }
+       return arr;
+    },[]);
+    return acc.concat(nameArr);
+  },[])
 }
 
 function peopleNameOfAllHouses() {
-  // your code goes here
+  return got.houses.reduce((acc,cv) => {
+       let nameArr =cv.people.reduce((arr,val) => {
+           acc[cv.name] = arr;
+           arr.push(val.name);
+           return  arr;
+       },[]);
+       return acc.concat(nameArr);
+  },{})
 }
 
 // Testing your result after writing your function
